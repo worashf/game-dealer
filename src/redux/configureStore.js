@@ -1,9 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 
-import weatherSlice from './weathers/weather';
+import dealSlice from './GameDeals/GameDeals';
 
+const rootReducer = combineReducers({
+  deals: dealSlice,
+});
 const store = configureStore({
-  reducer: weatherSlice,
+  reducer: rootReducer,
 });
 
 export default store;
