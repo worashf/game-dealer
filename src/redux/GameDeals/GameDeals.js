@@ -30,7 +30,13 @@ const initialState = {
 const dealSlice = createSlice({
   name: 'deals',
   initialState,
-  reducers: {},
+  reducers: {
+    sortDeals: (state, action) => ({
+      ...state,
+      deals: action.payload,
+    }),
+  },
+
   extraReducers: {
     [getGameDeals.pending]: (state) => ({ ...state, loading: true }),
     [getGameDeals.fulfilled]: (state, action) => ({
@@ -46,4 +52,5 @@ const dealSlice = createSlice({
   },
 });
 
+export const { sortDeals } = dealSlice.actions;
 export default dealSlice.reducer;
