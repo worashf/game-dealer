@@ -12,20 +12,16 @@ const Deal = (props) => {
         <img src={thumb} alt="thumb" className="thumb-img" />
       </div>
       <div className="deal-info">
-        <p className="game-title">
+        <p className="title">
           {title}
           {' '}
         </p>
-        <FaRegArrowAltCircleRight />
+        <FaRegArrowAltCircleRight className="arrow" />
       </div>
       <div className="price-info">
         <p>
-          {' '}
           Sale Price :
-          <span>
-            {' '}
-            {`$${salePrice}`}
-          </span>
+          {`$${salePrice}`}
         </p>
         <p>
           {' '}
