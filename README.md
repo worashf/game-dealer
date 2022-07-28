@@ -2,7 +2,7 @@
 
 # Game-Dealer
 
->
+> A website that allows users to check the available deals of computer games with data being collected directly from the cheapshark API. The app display deals of games on the home page and the details of the game deal on detail page.
 
 ## Built With:
 
