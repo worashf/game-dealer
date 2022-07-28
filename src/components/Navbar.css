@@ -1,0 +1,32 @@
+.header {
+  background-color: #005ce6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2%;
+  border-bottom: 1px solid #7885da;
+  color: #fff;
+}
+
+.header a {
+  color: #fff;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.logo:hover {
+  font-size: 35px;
+  color: aliceblue;
+}
+
+.icon {
+  font-size: 30px;
+  margin-left: 2rem;
+}
+
+.icon:hover {
+  color: aliceblue;
+  font-size: 32px;
+}
