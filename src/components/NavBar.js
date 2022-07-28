@@ -12,7 +12,7 @@ const NavBar = () => (
       <FaChevronLeft className="logo" />
     </NavLink>
 
-    <h3 className="title"> Games Deals Finder</h3>
+    <h1 className="title"> Games Deals Finder</h1>
     <div className="icons">
       <BiMicrophone className="icon" />
       <BiCog className="icon" />
