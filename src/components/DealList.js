@@ -10,7 +10,7 @@ const DealList = () => {
   const [title, setTitle] = useState('');
   const { deals, loading } = useSelector((state) => state.deals);
   const dispatch = useDispatch();
-  console.log(deals, 'deal');
+
   useEffect(() => {
     if (!deals.length) {
       dispatch(getGameDeals());
