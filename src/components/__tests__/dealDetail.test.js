@@ -6,7 +6,7 @@ import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import store from '../../redux/configureStore';
 import DealDetail from '../dealDetail';
 
-describe('test game deal', () => {
+describe('test game deal detail', () => {
   test('test detail page', async () => {
     const gameDealId = 1;
     const { findByText } = render(
@@ -14,6 +14,20 @@ describe('test game deal', () => {
         <MemoryRouter>
           <Routes>
             <Route path="detail/:1" element={<DealDetail />} />
+          </Routes>
+        </MemoryRouter>
+      </Provider>,
+    );
+
+    await waitFor(() => expect(findByText(gameDealId)).not.toBeNull());
+  });
+  test('test detail page', async () => {
+    const gameDealId = 1;
+    const { findByText } = render(
+      <Provider store={store}>
+        <MemoryRouter>
+          <Routes>
+            <Route path="detail/:2" element={<DealDetail />} />
           </Routes>
         </MemoryRouter>
       </Provider>,
