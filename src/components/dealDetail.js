@@ -6,25 +6,11 @@ import './dealDetail.css';
 
 const DealDetail = () => {
   const { id } = useParams();
-  console.log(id);
+
   const { deals } = useSelector((state) => state.deals);
-  console.log(id, 'dfd');
+
   const deal = deals.find((deal) => deal.id === parseInt(id, 10));
   const priceDifference = deal.normalPrice - deal.salePrice;
-  deals.forEach((gameDeal) => {
-    const dealPerStore = deals.filter(
-      (deal) => deal.storeId === gameDeal.storeId,
-    );
-    console.log(dealPerStore.length, `dela per store ${gameDeal.storeId}`);
-  });
-  deals.forEach((gameDeal) => {
-    const dealPerStore = deals.filter(
-      (deal) => deal.gameId === gameDeal.gameId,
-    );
-    console.log(dealPerStore.length, `dela per game ${gameDeal.gameId}`);
-  });
-
-  console.log(deals.length, 'deals length');
 
   return (
     <div className="detail-wrapper">
