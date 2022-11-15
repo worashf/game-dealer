@@ -18,13 +18,10 @@
 **\* mobile detail screenshot !**
 ![screenshot](src/images/detail.png)
 
-## live Demo
+## [live Demo](https://precious-crumble-81970c.netlify.app/)
 
-https://game-dealer-app.herokuapp.com/
 
-## Video Description
 
-https://www.loom.com/share/a068de30486b432f9913c11d65e69031
 
 ## Getting Started:
 
